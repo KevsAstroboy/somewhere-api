@@ -368,6 +368,7 @@ class UserBusiness(viewsets.ModelViewSet):
 
                 users = User.objects.filter(query)
 
+
                 for user in users:
                     # Ajouter un ProfilDto à la liste en excluant les champs avec des valeurs None
                     items.append(UserDto(
